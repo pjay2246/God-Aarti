@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#FFC107"
+    tools:context=".ui.PopUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="God Aarti"
+        android:textColor="#F44336"
+        android:textSize="35dp" />
+
+
+    <View
+        android:id="@+id/SplitLine"
+        android:layout_width="match_parent"
+        android:layout_height= "2dp"
+        android:background="#F44336"
+        android:layout_below="@id/AppName"/>
+
+
+    <TextView
+        android:id="@+id/DeveloperBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Developed By"
+        android:layout_below="@id/SplitLine"
+        android:textColor="#F44336"
+        android:textSize="30dp" />
+
+
+
+    <TextView
+        android:id="@+id/DeveloperName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Jay Patel"
+        android:layout_below="@id/DeveloperBy"
+        android:textColor="#F44336"
+        android:textSize="30dp" />
+
+    <View
+        android:id="@+id/SplitLine2"
+        android:layout_width="match_parent"
+        android:layout_height= "2dp"
+        android:background="#F44336"
+        android:layout_below="@id/DeveloperName"
+        android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

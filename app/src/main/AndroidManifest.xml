@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trycatch.GodAarti">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/om"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/om"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GodAarti"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+        <activity android:name="com.trycatch.GodAarti.ui.SplashScreen"
+            android:theme="@style/NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trycatch.GodAarti.ui.PopUpActivity"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.trycatch.GodAarti.ui.PlayerActivity"
+            android:launchMode="singleTop"
+          />
+        <activity android:name="com.trycatch.GodAarti.ui.MainActivity">
+
+        </activity>
+
+        <service
+            android:name="com.trycatch.GodAarti.adapter.MusicService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
